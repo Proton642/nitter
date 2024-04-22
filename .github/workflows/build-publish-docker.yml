@@ -1,12 +1,6 @@
 name: Build and Publish Docker
 
-on:
-  push:
-    branches: ["master"]
-    paths-ignore: ["README.md"]
-  pull_request:
-    branches: ["master"]
-    paths-ignore: ["README.md"]
+on: workflow_dispatch
 
 env:
   IMAGE_NAME: ${{ github.repository }}
